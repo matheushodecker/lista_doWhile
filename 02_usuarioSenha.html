@@ -6,7 +6,12 @@
     */
 
     //Entrada
-
+    let nomeDousuario = prompt("Escolha um nome de usuario");
+    let senhaDoUsuario = prompt("insira uma senha");
+while (senhaDoUsuario == nomeDousuario) {
+  alert("a senha nao pode ser igual ao nome de usuario");
+    senhaDoUsuario = prompt("insira uma senha");
+}
 
     //Processamento
 
