@@ -12,6 +12,55 @@
 
     //Entrada
 
+let nome = "";
+let idade = 0;
+let salario = 0;
+let sexo = "";
+let estadoCivil = "";aler
+
+while (true) {
+
+
+  nome = prompt("Digite seu nome: ");
+  idade = parseInt(prompt("Digite sua idade: "));
+  salario = parseFloat(prompt("Digite seu salário: "));
+  sexo = prompt("Digite seu sexo (f ou m): ");
+  estadoCivil = prompt("Digite seu estado civil (s, c, v ou d): ");
+
+  if (nome.length < 4) {
+    alert("O nome deve ter mais de 3 caracteres.");
+
+  }
+
+  if (idade < 0 || idade > 150) {
+    alert("A idade deve estar entre 0 e 150 anos.");
+
+  }aler
+
+  if (salario <= 0) {
+    alert("O salário deve ser maior que zero.");
+
+  }
+
+  if (sexo != "f" && sexo != "m") {
+    alert("O sexo deve ser 'f' ou 'm'.");
+
+  }
+
+  if (estadoCivil != "s" && estadoCivil != "c" && estadoCivil != "v" && estadoCivil != "d") {
+    alert("O estado civil deve ser 's', 'c', 'v' ou 'd'.");
+  
+  }
+
+  alert("Nome: " + nome);
+  alert("Idade: " + idade);
+  alert("Salário: " + salario);
+  alert("Sexo: " + sexo);
+  alert("Estado Civil: " + estadoCivil);
+
+  // Sair do loop
+  break;
+}
 
     //Processamento
 
